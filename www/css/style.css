@@ -1,0 +1,157 @@
+/* Fonts */
+@font-face {
+    font-family: 'debbyscript';
+    src: url('../fonts/12446-webfont.eot');
+    src: url('../fonts/12446-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/12446-webfont.woff2') format('woff2'),
+         url('../fonts/12446-webfont.woff') format('woff'),
+         url('../fonts/12446-webfont.ttf') format('truetype'),
+         url('../fonts/12446-webfont.svg#debbyscript') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'mullerregular';
+    src: url('../fonts/muller_regular-webfont.eot');
+    src: url('../fonts/muller_regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/muller_regular-webfont.woff2') format('woff2'),
+         url('../fonts/muller_regular-webfont.woff') format('woff'),
+         url('../fonts/muller_regular-webfont.ttf') format('truetype'),
+         url('muller_regular-webfont.svg#mullerregularuploaded_file') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+/* Fonts End */
+
+
+
+/* Reset start */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    color: #f0f1f5;
+    font: 12px/1 'mullerregular', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+    font-weight: normal;
+}
+
+ul, ol {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+button {
+    outline: none;
+    cursor: pointer;
+}
+btn {
+    display: inline-block;
+    padding: 44px 60px;
+    font-size: 34px;
+    font-weight: 400;
+    border: 2px solid transparent;
+    border-radius: 50px;
+}
+/* Стандартная кнопка btn-default  */
+.btn.btn-default {
+    background-color: #66060b;
+    border-color: #66060b;
+    color: #f7f1f1;
+    box-shadow: 0 8px 15px rgba(255, 253, 0, .5);
+    font-size: 18px;
+    padding: 22px 80px;
+}
+.btn.btn-default:hover {
+    background-color: rgb(230, 100, 100);
+}
+
+img {
+    max-width: 100%;
+}
+
+/* Reset end */
+
+/* Default componets start */
+/* Default componets end */
+
+/* Custom style start*/
+.inner {
+    /* background-image: url('../img/inner-bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; */
+    background: url('../img/inner-bg.jpg') no-repeat center  / cover;
+    height: 100vh;
+    text-align: center;
+}
+/* Вариант позиционирования надписи 1 СТАРТ */
+.inner::before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    margin-left: -4px;
+}
+.inner-content {
+    display: inline-block;
+    vertical-align: middle;
+}
+/* Вариант позиционирования надписи 1 КОНЕЦ */
+ /* Вариант позиционирования надписи 2 СТАРТ  */
+/* .inner-content {
+    position: absolute; */
+}
+ /* Вариант позиционирования надписи 2 КОНЕЦ */
+.inner h1 {
+    font-family: 'debbyscript';  
+    font-size: 150px;
+    color: #fff;
+}
+.inner h1 span {
+    display: block;
+    font-size: 72px;
+}
+.header {
+    border-bottom: 2px solid #00e9ba;
+    overflow: hidden;
+    padding: 20px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: blue; 
+    box-shadow: 0 3px rgba(0, 0, 0, .2);
+    z-index: 99;
+}
+.header .header-nav {
+    float: left;
+        
+}
+.header .logo {
+    float: left;
+    padding: 0 70px;
+    
+}
+.header .header-nav li {
+float: left;
+line-height: 44px;
+}
+.header .header-nav li + li {
+    margin-left: 80px;
+}
+.fa {
+    float: right;
+}
+/* Custom style end*/
